@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">TITATO</string>
+    <string name="Tic_Tac_Toe">Tic Tac Toe</string>
+    <string name="HSL">Home Screen Logo</string>
+    <string name="pvp_home_screen">Play</string>
+    <string name="go_back_home_screen">Go Back To Home Screen</string>
+    <string name="hs_support_zero">Aesthetic Home Screen Image</string>
+    <string name="hs_support_cross">Aesthetic Home Screen Image</string>
+    <string name="gs_support_zero">Aesthetic Game Screen Image</string>
+    <string name="gs_support_cross">Aesthetic Game Screen Image</string>
+    <string name="player_one">Player One</string>
+    <string name="player_two">Player Two</string>
+    <string name="player_one_score">0</string>
+    <string name="player_two_score">0</string>
+    <string name="reset_switch">Reset</string>
+    <string name="playerStatus1">Player One Winning!</string>
+    <string name="playerStatus2">Player Two Winning!</string>
+    <string name="grid">Grid Layout</string>
+    <string name="symbol">Game Token</string>
+</resources>

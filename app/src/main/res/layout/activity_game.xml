@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gameActivity">
+
+    <ImageButton
+        android:id="@+id/goBack"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:background="@color/teal_200"
+        android:contentDescription="@string/go_back_home_screen"
+        android:onClick="goBackHS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/player_one_name"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/purple_500"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="@string/player_one"
+        android:textAlignment="center"
+        android:textColor="@color/teal_200"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105" />
+
+    <TextView
+        android:id="@+id/player_two_name"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/purple_500"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="@string/player_two"
+        android:textAlignment="center"
+        android:textColor="@color/teal_200"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105" />
+
+    <TextView
+        android:id="@+id/player_two_score"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="@string/player_one_score"
+        android:textAlignment="center"
+        android:textColor="@color/teal_200"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.162"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/player_one_score"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="@string/player_two_score"
+        android:textAlignment="center"
+        android:textColor="@color/teal_200"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.162"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/game_screen_supp_cross"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="@string/gs_support_cross"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.334"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105"
+        app:srcCompat="@drawable/tito_cross"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/game_screen_supp_zero"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="@string/gs_support_zero"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105"
+        app:srcCompat="@drawable/tito_zero"
+        tools:ignore="ImageContrastCheck" />
+
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/purple_500"
+        android:fontFamily="sans-serif-condensed-light"
+        android:onClick="fullReset"
+        android:text="@string/reset_switch"
+        android:textColor="@color/teal_200"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.947" />
+
+    <TextView
+        android:id="@+id/playerStatus"
+        android:layout_width="266dp"
+        android:layout_height="43dp"
+        android:background="@drawable/rounded_corner"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.844"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/playGrid"
+        android:layout_width="402dp"
+        android:layout_height="402dp"
+        android:contentDescription="@string/grid"
+        app:srcCompat="@drawable/play_board"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498" />
+
+    <LinearLayout
+        android:layout_width="402dp"
+        android:layout_height="402dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="402dp"
+            android:layout_height="134dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/tito0"
+                android:layout_width="134dp"
+                android:layout_height="134dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:contentDescription="@string/symbol"
+                android:onClick="userTap"
+                android:padding="20dp"
+                android:scaleType="fitCenter"
+                android:tag="0"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <ImageView
+                android:id="@+id/tito1"
+                android:layout_width="134dp"
+                android:layout_height="134dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/symbol"
+                android:padding="20dp"
+                android:scaleType="fitCenter"
+                android:clickable="true"
+                android:onClick="userTap"
+                android:tag="1"
+                tools:ignore="DuplicateSpeakableTextCheck"/>
+
+            <ImageView
+                android:id="@+id/tito2"
+                android:layout_width="134dp"
+                android:layout_height="134dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/symbol"
+                android:padding="20dp"
+                android:scaleType="fitCenter"
+                android:clickable="true"
+                android:onClick="userTap"
+                android:tag="2"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="402dp"
+            android:layout_height="134dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/tito3"
+                android:layout_width="134dp"
+                android:layout_height="134dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/symbol"
+                android:padding="20dp"
+                android:scaleType="fitCenter"
+                android:clickable="true"
+                android:onClick="userTap"
+                android:tag="3"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <ImageView
+                android:id="@+id/tito4"
+                android:layout_width="134dp"
+                android:layout_height="134dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/symbol"
+                android:padding="20dp"
+                android:scaleType="fitCenter"
+                android:clickable="true"
+                android:onClick="userTap"
+                android:tag="4"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <ImageView
+                android:id="@+id/tito5"
+                android:layout_width="134dp"
+                android:layout_height="134dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/symbol"
+                android:padding="20dp"
+                android:scaleType="fitCenter"
+                android:clickable="true"
+                android:onClick="userTap"
+                android:tag="5"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="402dp"
+            android:layout_height="134dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/tito6"
+                android:layout_width="134dp"
+                android:layout_height="134dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/symbol"
+                android:padding="20dp"
+                android:scaleType="fitCenter"
+                android:clickable="true"
+                android:onClick="userTap"
+                android:tag="6"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <ImageView
+                android:id="@+id/tito7"
+                android:layout_width="134dp"
+                android:layout_height="134dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/symbol"
+                android:padding="20dp"
+                android:scaleType="fitCenter"
+                android:clickable="true"
+                android:onClick="userTap"
+                android:tag="7"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <ImageView
+                android:id="@+id/tito8"
+                android:layout_width="134dp"
+                android:layout_height="134dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/symbol"
+                android:padding="20dp"
+                android:scaleType="fitCenter"
+                android:clickable="true"
+                android:onClick="userTap"
+                android:tag="8"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/turnStatus"
+        android:layout_width="161dp"
+        android:layout_height="35dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.175"
+        android:textSize="14sp"
+        android:textAlignment="center"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
