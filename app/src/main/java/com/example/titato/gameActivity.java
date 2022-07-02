@@ -48,6 +48,7 @@ public class gameActivity extends AppCompatActivity{
         updatePlayerScore();
         turnStatus.setText("Player One's Turn");
         playerStatus.setText("");
+        turnCounter=0;
     }
 
     public void gameReset(View view){
@@ -80,6 +81,7 @@ public class gameActivity extends AppCompatActivity{
         }else{
             turnStatus.setText("Player Two's Turn");
         }
+        turnCounter=0;
     }
     public void updatePlayerScore(){
         String temp1 = Integer.toString(p1scoreCount);
