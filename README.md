@@ -1,4 +1,10 @@
 # TicTacToe
+## Project Description
+*Basic project using basic elements to create a classic pvp tic-tac-toe game*
+## Tech Stack Used
+>Java
+
+>Basic Views, Linear Layouts (Both V and H)
 <p align="center">
   <img width="200" src="https://user-images.githubusercontent.com/98741486/176996649-54fd36fc-8eb5-439f-853a-0f6b4fbe6ff5.jpg" >
 </p>
